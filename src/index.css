@@ -1,0 +1,20 @@
+:root {
+  --primary-color: hsl(0, 84%, 32%);
+  --primary-colorTwo: hsl(0, 66%, 26%);
+  --text-color: rgb(211, 211, 211);
+  --bg-color: rgb(240, 240, 240);
+  --secundary-color: hsl(0, 0%, 39%);
+  --active-color: hsl(0, 0%, 51%);
+  --border-color: hsl(0, 0%, 20%);
+  --border-radius: 0.6em;
+}
+
+* {
+  margin: 0;
+  font-family: 'Roboto Condensed', sans-serif;
+  box-sizing: border-box;
+}
+
+.rootContainer {
+  background-color: var(--bg-color);
+}
