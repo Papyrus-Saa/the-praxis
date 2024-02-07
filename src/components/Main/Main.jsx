@@ -14,6 +14,8 @@ import Form from './Form';
 import Footer from './Footer';
 import OfficeHours from './OfficerHours';
 
+import PicDoctor from '../../assets/img/pexels-ivan-samkov-4989168.jpg';
+
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 const MainContainer = styled.div`
@@ -72,7 +74,6 @@ const ImageContainer = styled.div`
   }
   @media screen and (min-width: 1400px) {
     width: 40%;
-
   }
 `;
 
@@ -119,7 +120,7 @@ const Main = ({
       <MainContainer>
         {isOpenOfficerHours && (
           <OfficeHours handleClickOficcerClose={handleClickOficcerClose} />
-          )}
+        )}
 
         <Container>
           {openMap && <Map closeMap={closeMap} />}
@@ -156,13 +157,10 @@ const Main = ({
             </SpanTitleColor>
           </SpanTitle>
           <ImageContainer>
-            <Image
-              src="/src/assets/img/pexels-ivan-samkov-4989168.jpg"
-              alt="doctor pic"
-            />
+            <Image src={PicDoctor} alt="doctor pic" />
           </ImageContainer>
         </AcademicCredentials>
-          <DoctorEducation />
+        <DoctorEducation />
       </MainContainer>
       <Form />
       <Contact />

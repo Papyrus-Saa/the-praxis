@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import styled from 'styled-components';
 
-const images = [
-  '/src/assets/img/img0.jpg',
-  '/src/assets/img/img7.jpg',
-  '/src/assets/img/img2.jpg',
-  '/src/assets/img/img3.jpg',
-  '/src/assets/img/img4.jpg',
-  '/src/assets/img/img5.jpg',
-  '/src/assets/img/img6.jpg',
-];
+import pic0 from '../../assets/img/img0.jpg';
+import pic7 from '../../assets/img/img7.jpg';
+import pic2 from '../../assets/img/img2.jpg';
+import pic3 from '../../assets/img/img3.jpg';
+import pic4 from '../../assets/img/img4.jpg';
+import pic5 from '../../assets/img/img5.jpg';
+import pic6 from '../../assets/img/img6.jpg';
+
+const images = [pic0, pic7, pic2, pic3, pic4, pic5, pic6];
 
 const Image = styled.img`
   display: block;

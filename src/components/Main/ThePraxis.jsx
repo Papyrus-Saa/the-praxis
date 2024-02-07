@@ -4,13 +4,13 @@ import CloseContent from '../shared/CloseContent';
 import Contact from '../shared/Contact';
 
 const images = [
-  '/src/assets/img/img0.jpg',
-  '/src/assets/img/img7.jpg',
-  '/src/assets/img/img2.jpg',
-  '/src/assets/img/img3.jpg',
-  '/src/assets/img/img4.jpg',
-  '/src/assets/img/img5.jpg',
-  '/src/assets/img/img6.jpg',
+  '../../assets/img/img0.jpg',
+  '../../assets/img/img7.jpg',
+  '../../assets/img/img2.jpg',
+  '../../assets/img/img3.jpg',
+  '../../assets/img/img4.jpg',
+  '../../assets/img/img5.jpg',
+  '../../assets/img/img6.jpg',
 ];
 
 const imageTexts = [
@@ -38,38 +38,38 @@ const CarouselContainer = styled.div`
   margin-bottom: 10px;
   padding-top: 2em;
   animation: ${fadeInAnimation} 1s both;
-  
+
   @media screen and (min-width: 768px) {
     width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
-  `;
+`;
 
 const Image = styled.img`
   display: block;
   width: 100%;
   height: auto;
   border-radius: var(--border-radius);
-  
+
   @media screen and (min-width: 1400px) {
     width: 60%;
     margin-right: auto;
     margin-left: auto;
   }
-  `;
+`;
 const List = styled.ul`
   text-align: center;
   list-style: none;
   padding: 0;
-  `;
+`;
 const ListItem = styled.li`
   margin: 20px;
   box-shadow: 0px 0px 5px 0px rgba(161, 161, 161, 1);
   border-radius: var(--border-radius);
 
   @media screen and (min-width: 1400px) {
-    padding-bottom: .6em;
+    padding-bottom: 0.6em;
   }
 `;
 
