@@ -3,14 +3,17 @@ import styled, { keyframes } from 'styled-components';
 import CloseContent from '../shared/CloseContent';
 import Contact from '../shared/Contact';
 
+
+import image1 from '../../assets/img/img0.jpg'
+import image2 from '../../assets/img/img7.jpg'
+import image3 from '../../assets/img/img2.jpg'
+import image4 from '../../assets/img/img3.jpg'
+import image5 from '../../assets/img/img4.jpg'
+import image6 from  '../../assets/img/img5.jpg'
+import image7 from '../../assets/img/img6.jpg'
+
 const images = [
-  '../../assets/img/img0.jpg',
-  '../../assets/img/img7.jpg',
-  '../../assets/img/img2.jpg',
-  '../../assets/img/img3.jpg',
-  '../../assets/img/img4.jpg',
-  '../../assets/img/img5.jpg',
-  '../../assets/img/img6.jpg',
+  image1, image2, image3, image4, image5, image6,  image7
 ];
 
 const imageTexts = [
