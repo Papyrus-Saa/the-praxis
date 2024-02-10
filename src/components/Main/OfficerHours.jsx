@@ -32,6 +32,11 @@ const Container = styled.div`
     margin-right: auto;
     margin-left: auto;
   }
+  @media screen and (min-width: 1400px) {
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+  }
 `;
 const Title = styled.span`
   display: block;

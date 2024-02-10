@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import Logo from '../shared/Logo';
+import Logo from './Logo';
 
 const FooterContainer = styled.footer`
   display: flex;
@@ -10,6 +10,15 @@ const FooterContainer = styled.footer`
   width: 100%;
   padding: 1.3em 0.5em;
   background-color: var(--primary-colorTwo);
+  margin-top: auto;
+
+  @media screen and (min-width: 768px) {
+    padding: 0.4em;
+  }
+  @media screen and (min-width: 1400px) {
+    padding: 0.4em;
+  }
+  
 `;
 
 const LogoContainer = styled.footer`

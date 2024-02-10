@@ -55,15 +55,24 @@ const Title = styled.h5`
     font-size: 1.1rem;
   }
 `;
+import ivanDoctor from '../../assets/img/pexels-ivan-samkov-4989168.jpg'
+import image1 from '../../assets/img/teamPic1.jpg';
+import image2 from '../../assets/img/teamPic2.jpg';
+import image3 from '../../assets/img/teamPic3.jpg';
+import image4 from '../../assets/img/teamPic4.jpg';
+import image5 from '../../assets/img/teamPic5.jpg';
+
 
 const images = [
-  'src/assets/img/pexels-ivan-samkov-4989168.jpg',
-  '/src/assets/img/teamPic1.jpg',
-  '/src/assets/img/teamPic2.jpg',
-  '/src/assets/img/teamPic3.jpg',
-  '/src/assets/img/teamPic4.jpg',
-  '/src/assets/img/teamPic5.jpg',
+  ivanDoctor,
+  image1,
+  image2,
+  image3,
+  image4,
+  image5,
 ];
+
+
 
 const imageTexts = [
   'DR SANCHEZ',

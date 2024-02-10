@@ -11,7 +11,7 @@ import SimpleCarousel from './SimpleCarousel';
 import DoctorEducation from './DoctorEducation';
 import Contact from '../shared/Contact';
 import Form from './Form';
-import Footer from './Footer';
+import Footer from '../shared/Footer';
 import OfficeHours from './OfficerHours';
 
 import PicDoctor from '../../assets/img/pexels-ivan-samkov-4989168.jpg';
@@ -118,14 +118,13 @@ const Main = ({
   return (
     <>
       <MainContainer>
-        {isOpenOfficerHours && (
-          <OfficeHours handleClickOficcerClose={handleClickOficcerClose} />
-        )}
-
         <Container>
           {openMap && <Map closeMap={closeMap} />}
           {openEmergency && <Emergency closeEmergency={closeEmergency} />}
           <SimpleCarousel />
+          {isOpenOfficerHours && (
+            <OfficeHours handleClickOficcerClose={handleClickOficcerClose} />
+          )}
           <Navbar
             handleClick={handleClick}
             handleClickCarouselOpen={handleClickCarouselOpen}

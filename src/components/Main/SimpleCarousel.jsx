@@ -15,10 +15,20 @@ const Image = styled.img`
   display: block;
   width: 100%;
   height: auto;
-
+  
   @media screen and (min-width: 600px) {
     height: 500px;
+    margin-bottom: 20px;
     object-fit: cover;
+  }
+  @media screen and (min-width: 768px) {
+    height: 600px;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1040px) {
+    height: 600px;
+    margin-bottom: 50px;
+
   }
 `;
 
