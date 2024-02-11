@@ -17,7 +17,7 @@ const Container = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    box-shadow: 0px 2px 2px 0px #5c0101;
+    box-shadow: 0px 2px 2px 0px var(--primary-color);
     width: 35px;
     height: 35px;
     cursor: pointer;

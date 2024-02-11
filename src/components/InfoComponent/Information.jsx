@@ -17,9 +17,9 @@ const Container = styled.div`
 
   @media screen and (min-width: 1024px) {
     width: 400px;
-    background-color: #6b0000;
+    background-color: #060135;
     padding: 1em;
-    box-shadow: 0px 2px 2px 0px #5c0000;
+    box-shadow: 0px 2px 2px 0px #0d082b;
     border-radius: var(--border-radius);
   }
 `;

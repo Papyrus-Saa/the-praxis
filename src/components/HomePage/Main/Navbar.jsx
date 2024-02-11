@@ -46,12 +46,14 @@ const ListItem = styled.li`
     }
   }
 
-  @media screen and (min-width: 1400) {
+  @media screen and (min-width: 1400px) {
     &:hover {
       background-color: var(--primary-color);
     }
-    padding: 0.2em;
-    background-color: #df1313;
+    width: 600px;
+    margin: 0 auto;
+    padding: .5em;
+    margin-bottom: 20px;
   }
 
   &:active {
