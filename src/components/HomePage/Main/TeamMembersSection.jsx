@@ -1,6 +1,5 @@
 /* eslint-disable react/prop-types */
 import styled, { keyframes } from 'styled-components';
-import CloseContent from '../shared/CloseContent';
 
 const fadeInAnimation = keyframes`
   0% {
@@ -55,24 +54,15 @@ const Title = styled.h5`
     font-size: 1.1rem;
   }
 `;
-import ivanDoctor from '../../assets/img/pexels-ivan-samkov-4989168.jpg'
-import image1 from '../../assets/img/teamPic1.jpg';
-import image2 from '../../assets/img/teamPic2.jpg';
-import image3 from '../../assets/img/teamPic3.jpg';
-import image4 from '../../assets/img/teamPic4.jpg';
-import image5 from '../../assets/img/teamPic5.jpg';
+import ivanDoctor from '../../../assets/img/pexels-ivan-samkov-4989168.jpg';
+import image1 from '../../../assets/img/teamPic1.jpg';
+import image2 from '../../../assets/img/teamPic2.jpg';
+import image3 from '../../../assets/img/teamPic3.jpg';
+import image4 from '../../../assets/img/teamPic4.jpg';
+import image5 from '../../../assets/img/teamPic5.jpg';
+import HomeComponent from '../../shared/HomeComponent';
 
-
-const images = [
-  ivanDoctor,
-  image1,
-  image2,
-  image3,
-  image4,
-  image5,
-];
-
-
+const images = [ivanDoctor, image1, image2, image3, image4, image5];
 
 const imageTexts = [
   'DR SANCHEZ',
@@ -90,13 +80,11 @@ const personTitle = [
   'MEDIZINISCHE FACHANGESTELLTE',
 ];
 
-const TeamMembersSection = ({ handleClickTeamMembersClose }) => {
+const TeamMembersSection = () => {
   return (
     <>
       <Container>
-        <div onClick={handleClickTeamMembersClose}>
-          <CloseContent />
-        </div>
+        <HomeComponent/>
         <h3>Willkommen</h3>
         <List>
           {images.map((image, index) => (

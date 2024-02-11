@@ -3,9 +3,10 @@ import HomeComponent from '../shared/HomeComponent';
 import Footer from '../shared/Footer';
 
 const Container = styled.div`
-  display: grid;
-  width: 100%;
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100vh;
   text-align: center;
 `;
 const ContainerContent = styled.div`

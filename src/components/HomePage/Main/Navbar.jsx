@@ -1,3 +1,5 @@
+/* eslint-disable no-dupe-keys */
+/* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
 
 import styled from 'styled-components';
@@ -6,6 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Nav = styled.nav`
   width: 100%;
   border-bottom: 1px solid var(--text-color);
+  background-color: #df2222;
 
   @media screen and (min-width: 1400px) {
     width: 90%;
@@ -22,7 +25,7 @@ const List = styled.ul`
   padding: 0;
   gap: 10px;
   margin: 10px;
-  `;
+`;
 
 const ListItem = styled.li`
   display: flex;
@@ -34,17 +37,20 @@ const ListItem = styled.li`
   border: 1px solid var(--primary-color);
   border-radius: var(--border-radius);
   cursor: pointer;
-
-  &:hover {
-    background-color: var(--primary-color);
-  }
+  
 
   @media screen and (min-width: 600px) {
     padding: 0.8em;
+    &:hover {
+      background-color: var(--primary-color);
+    }
   }
 
   @media screen and (min-width: 1400) {
-    padding: .2em;
+    &:hover {
+      background-color: var(--primary-color);
+    }
+    padding: 0.2em;
     background-color: #df1313;
   }
 
@@ -82,8 +88,6 @@ const navbarContent = [
 const Navbar = ({
   handleClick,
   handleClickCarouselOpen,
-  handleClickTeamMembersOpen,
-  handleClickOfficerOpen,
 }) => {
   const navigate = useNavigate();
 
@@ -91,15 +95,18 @@ const Navbar = ({
     const itemActions = {
       Leistungen: () => {
         handleClick();
+        navigate('/leistungen');
       },
       'Die Praxis': () => {
+        navigate('/praxis')
         handleClickCarouselOpen();
       },
       'Das Praxisteam': () => {
-        handleClickTeamMembersOpen();
+        navigate('/teamMembers')
       },
+
       Spechstundenzeiten: () => {
-        handleClickOfficerOpen();
+        navigate('/officeHours')
       },
       Impressum: '/legalNotice',
       Datenschutz: () => {

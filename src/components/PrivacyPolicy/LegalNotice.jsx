@@ -3,15 +3,16 @@ import Footer from '../shared/Footer';
 import HomeComponent from '../shared/HomeComponent';
 
 const Container = styled.div`
-display: grid;
   width: 100%;
-  min-height: 100vh;
+  height: 100%;
+  overflow: auto;
   padding: 0.6em;
   text-align: center;
+  padding: 1em;
 `;
 
 const ContainerContent = styled.div`
-  padding: 1em;
+  padding: 1em 0 0 0;
 `;
 const Span = styled.span`
   display: block;
@@ -94,12 +95,23 @@ const Impressum = () => {
           <div>
             <Span>Stand:</Span>
             <Paragraph>[Datum der letzten Aktualisierung]</Paragraph>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est
+            quaerat in vitae mollitia nostrum ad ullam animi optio fugiat
+            exercitationem. Voluptatem esse fugit nostrum tempora deleniti unde
+            sequi commodi adipisci? Doloremque cupiditate error veniam nulla
+            odit placeat, accusantium dolores magnam, saepe iure assumenda nihil
+            amet reiciendis voluptatibus ullam dolorem maxime quidem at sapiente
+            accusamus esse nemo ut. Aliquam, eos totam! Modi ipsa similique
+            asperiores mollitia. Cum quibusdam nobis obcaecati animi saepe
+            voluptas sequi fuga esse soluta iusto. Doloribus laboriosam
+            praesentium facere, accusantium perspiciatis magni excepturi, eos,
+            dolorem ratione enim suscipit.
           </div>
 
           {/* Social-Media-Profile Hinweis hier einfügen */}
         </Container>
+        <Footer />
       </ContainerContent>
-      <Footer />
     </>
   );
 };

@@ -18,8 +18,8 @@ const ImgContainer = styled.div`
   }
 
   @media screen and (min-width: 1024px) {
-    width: 240px;
-    height: 240px;
+    width: 140px;
+    height: 140px;
   }
 `;
 

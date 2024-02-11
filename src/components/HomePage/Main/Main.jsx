@@ -1,20 +1,17 @@
+/* eslint-disable no-unused-vars */
 import Navbar from './Navbar';
-import Leistungen from './Leistungen';
-import Map from '../InfoComponent/Map';
-import Emergency from '../InfoComponent/Emergency';
 import { useState } from 'react';
 import styled from 'styled-components';
-import CloseContent from '../shared/CloseContent';
-import DiePraxis from './ThePraxis';
 import TeamMembersSection from './TeamMembersSection';
 import SimpleCarousel from './SimpleCarousel';
 import DoctorEducation from './DoctorEducation';
-import Contact from '../shared/Contact';
+import Contact from '../../shared/Contact';
 import Form from './Form';
-import Footer from '../shared/Footer';
+import Footer from '../../shared/Footer';
 import OfficeHours from './OfficerHours';
 
-import PicDoctor from '../../assets/img/pexels-ivan-samkov-4989168.jpg';
+import PicDoctor from '../../../assets/img/pexels-ivan-samkov-4989168.jpg';
+import ThePraxis from './ThePraxis';
 
 /* eslint-disable no-undef */
 /* eslint-disable react/prop-types */
@@ -91,17 +88,8 @@ const Image = styled.img`
 
 // eslint-disable-next-line react/prop-types
 const Main = ({
-  closeMap,
-  openMap,
-  openEmergency,
-  closeEmergency,
-  mostrar,
   handleClickCarouselOpen,
-  isOpenCarousel,
-  isOpenTeamMembers,
-  handleClickCarouselClose,
   handleClickTeamMembersOpen,
-  handleClickTeamMembersClose,
   isOpenOfficerHours,
   handleClickOfficerOpen,
   handleClickOficcerClose,
@@ -111,16 +99,13 @@ const Main = ({
   const handleClick = () => {
     setIsOpen(true);
   };
-  const handleClickClose = () => {
-    setIsOpen(false);
-  };
 
   return (
     <>
       <MainContainer>
         <Container>
-          {openMap && <Map closeMap={closeMap} />}
-          {openEmergency && <Emergency closeEmergency={closeEmergency} />}
+          {/* {openMap && <Map closeMap={closeMap} />}
+          {openEmergency && <Emergency closeEmergency={closeEmergency} />} */}
           <SimpleCarousel />
           {isOpenOfficerHours && (
             <OfficeHours handleClickOficcerClose={handleClickOficcerClose} />
@@ -131,23 +116,17 @@ const Main = ({
             handleClickTeamMembersOpen={handleClickTeamMembersOpen}
             handleClickOfficerOpen={handleClickOfficerOpen}
           />
-          <Leistungen
-            mostrar={mostrar}
-            isOpen={isOpen}
-            handleClickClose={handleClickClose}
-            closeContent={CloseContent}
-          />
-          <DiePraxis
+          {/* <ThePraxis
             isOpenCarousel={isOpenCarousel}
             handleClickCarouselClose={handleClickCarouselClose}
-          />
+          /> */}
         </Container>
 
-        {isOpenTeamMembers && (
+        {/* {isOpenTeamMembers && (
           <TeamMembersSection
             handleClickTeamMembersClose={handleClickTeamMembersClose}
           />
-        )}
+        )} */}
         <AcademicCredentials>
           <SpanTitle>
             Nach 15 Jahren Klinikerfahrung jetzt in niedergelassener Praxis

@@ -1,10 +1,13 @@
 /* eslint-disable react/jsx-no-duplicate-props */
 /* eslint-disable no-undef */
-import Main from '../Main/Main';
+import Main from '../HomePage/Main/Main';
 import Header from './Header/Header';
 import { useState } from 'react';
 
+
 const App = () => {
+
+
   // eslint-disable-next-line no-unused-vars
   const [openMap, setOpenMap] = useState(false);
   const [openEmergency, setOpenEmergency] = useState(false);
@@ -34,11 +37,11 @@ const App = () => {
   };
 
   const handleClickTeamMembersOpen = () => {
-    setisOpenTeamMembers(true)
-  }
+    setisOpenTeamMembers(true);
+  };
   const handleClickTeamMembersClose = () => {
-    setisOpenTeamMembers(false)
-  }
+    setisOpenTeamMembers(false);
+  };
 
   const handleClickOfficerOpen = () => {
     setisOpenOfficerHours(true);

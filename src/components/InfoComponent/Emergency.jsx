@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 import styled, { keyframes } from 'styled-components';
-import CloseContent from '../shared/CloseContent';
 import CallButton from '../shared/CallButton';
+import HomeComponent from '../shared/HomeComponent';
 
 const fadeInAnimation = keyframes`
   0% {
@@ -13,12 +13,11 @@ const fadeInAnimation = keyframes`
 `;
 
 const Container = styled.div`
-  position: relative;
-  text-align: center;
   width: 100%;
-  background-color: var(--text-color);
+  height: 100vh;
+  text-align: center;
   padding: 2em 0.6em 1em;
-  animation: ${fadeInAnimation} 1s both;
+  animation: ${fadeInAnimation} 1.5s both;
 `;
 
 const Title = styled.h3`
@@ -42,10 +41,8 @@ const Emergency = ({ closeEmergency }) => {
   return (
     <>
       <Container>
-        <div onClick={closeEmergency}>
-          {' '}
-          <CloseContent />
-        </div>
+        <HomeComponent />
+        <div onClick={closeEmergency}> </div>
         <Title>Wichtige Informationen für Notfälle</Title>
 
         <List>
@@ -84,11 +81,6 @@ const Emergency = ({ closeEmergency }) => {
         </List>
 
         <CallButton />
-
-        <p>
-          Wir danken für Ihr Verständnis und Ihre Kooperation. Ihre Sicherheit
-          und Ihr Wohlbefinden haben für uns oberste Priorität
-        </p>
       </Container>
     </>
   );

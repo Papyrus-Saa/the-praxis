@@ -18,7 +18,7 @@ const Container = styled.div`
   @media screen and (min-width: 600px) {
     width: 50px;
     height: 50px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
 
     svg {
       width: 42px; // Nuevo ancho para pantallas mayores a 600px
@@ -29,16 +29,18 @@ const Container = styled.div`
   @media screen and (min-width: 768px) {
     width: 60px;
     height: 60px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
   @media screen and (min-width: 1024px) {
-   &:hover {
-    background-color: var(--primary-colorTwo);
-    border: 3px solid  var(--secundary-color);
-    svg path {
-      fill: var(--secundary-color);
+    width: 50px;
+    height: 50px;
+    &:hover {
+      background-color: var(--primary-colorTwo);
+      border: 3px solid var(--secundary-color);
+      svg path {
+        fill: var(--secundary-color);
+      }
     }
-   }
   }
 `;
 
@@ -47,7 +49,7 @@ const Logo = () => {
     <Container>
       <Link to="/">
         <svg
-          fill="hsl(0, 84%, 32%)"
+          fill="var(--primary-color)"
           height="32"
           width="28"
           viewBox="0 0 384 512">

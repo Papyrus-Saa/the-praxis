@@ -1,6 +1,7 @@
+/* eslint-disable no-undef */
 import styled from 'styled-components';
 import ContactIcon from '../HomePage/Header/ContactIcon';
-
+import { Link, useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
   display: flex;
@@ -23,9 +24,7 @@ const Container = styled.div`
   }
 `;
 
-
-
-const phoneNumber = '004915221881393';
+const phoneNumber = '+4915221881393';
 
 const handleTelClick = () => {
   window.location.href = 'tel:+123456789';
@@ -33,10 +32,10 @@ const handleTelClick = () => {
 };
 
 const handleEmailClick = () => {
-  const emailAddress = 'saavedra.ramon.brand@gmail.com'
+  const emailAddress = 'saavedra.ramon.brand@gmail.com';
 
-  const mailtoLink = `mailto:${emailAddress}`
-  
+  const mailtoLink = `mailto:${emailAddress}`;
+
   window.location.href = `https://wa.me/${phoneNumber}`;
   window.location.href = mailtoLink;
 };
@@ -44,9 +43,17 @@ const handleEmailClick = () => {
 const handleWhatsAppClick = () => {
   window.location.href = `https://wa.me/${phoneNumber}`;
 };
-// eslint-disable-next-line react/prop-types, no-unused-vars
-const Information = ({handleOpenMap, handleOpenEmergency}) => {
 
+// eslint-disable-next-line react/prop-types, no-unused-vars
+const Information = () => {
+  const navigate = useNavigate();
+
+  const handleIcon2Click = () => {
+    navigate('/map');
+  };
+  const handleIcon3Click = () => {
+    navigate('/emergency');
+  };
 
   return (
     <>
@@ -67,22 +74,24 @@ const Information = ({handleOpenMap, handleOpenEmergency}) => {
             </svg>
           }
         />
-        <ContactIcon
-          iconInfo="Info 2"
-          onClick={handleOpenMap}
-          path={
-            <svg
-              fill="var(--secundary-color)"
-              height="70%"
-              width="70%"
-              viewBox="0 0 384 512">
-              <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
-            </svg>
-          }
-        />
+        <Link>
+          <ContactIcon
+            iconInfo="Info 2"
+            onClick={handleIcon2Click}
+            path={
+              <svg
+                fill="var(--secundary-color)"
+                height="70%"
+                width="70%"
+                viewBox="0 0 384 512">
+                <path d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z" />
+              </svg>
+            }
+          />
+        </Link>
         <ContactIcon
           iconInfo="Info 3"
-          onClick={handleOpenEmergency}
+          onClick={handleIcon3Click}
           path={
             <svg
               xmlns="http://www.w3.org/2000/svg"

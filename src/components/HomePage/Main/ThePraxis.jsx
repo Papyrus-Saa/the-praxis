@@ -1,20 +1,19 @@
 /* eslint-disable react/prop-types */
 import styled, { keyframes } from 'styled-components';
-import CloseContent from '../shared/CloseContent';
-import Contact from '../shared/Contact';
+import Contact from '../../shared/Contact';
+
+import image1 from '../../../assets/img/img0.jpg';
+import image2 from '../../../assets/img/img7.jpg';
+import image3 from '../../../assets/img/img2.jpg';
+import image4 from '../../../assets/img/img3.jpg';
+import image5 from '../../../assets/img/img4.jpg';
+import image6 from '../../../assets/img/img5.jpg';
+import image7 from '../../../assets/img/img6.jpg';
 
 
-import image1 from '../../assets/img/img0.jpg'
-import image2 from '../../assets/img/img7.jpg'
-import image3 from '../../assets/img/img2.jpg'
-import image4 from '../../assets/img/img3.jpg'
-import image5 from '../../assets/img/img4.jpg'
-import image6 from  '../../assets/img/img5.jpg'
-import image7 from '../../assets/img/img6.jpg'
+import HomeComponent from '../../shared/HomeComponent';
 
-const images = [
-  image1, image2, image3, image4, image5, image6,  image7
-];
+const images = [image1, image2, image3, image4, image5, image6, image7];
 
 const imageTexts = [
   'Anmeldung',
@@ -35,7 +34,7 @@ const fadeInAnimation = keyframes`
   }
 `;
 
-const CarouselContainer = styled.div`
+const Container = styled.div`
   position: relative;
   width: 100%;
   margin-bottom: 10px;
@@ -86,25 +85,21 @@ const Title = styled.h4`
   }
 `;
 
-const ThePraxis = ({ isOpenCarousel, handleClickCarouselClose }) => {
+const ThePraxis = () => {
   return (
     <>
-      {isOpenCarousel && (
-        <CarouselContainer>
-          <div onClick={handleClickCarouselClose}>
-            <CloseContent />
-          </div>
-          <List>
-            {images.map((item, index) => (
-              <ListItem key={index}>
-                <Title>{imageTexts[index]}</Title>
-                <Image src={item} alt={`Slide ${index + 1}`} />
-              </ListItem>
-            ))}
-          </List>
-          <Contact />
-        </CarouselContainer>
-      )}
+      <Container>
+        <HomeComponent/>
+        <List>
+          {images.map((item, index) => (
+            <ListItem key={index}>
+              <Title>{imageTexts[index]}</Title>
+              <Image src={item} alt={`Slide ${index + 1}`} />
+            </ListItem>
+          ))}
+        </List>
+        <Contact />
+      </Container>
     </>
   );
 };

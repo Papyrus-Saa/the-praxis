@@ -24,12 +24,12 @@ const Title = styled.h1`
   }
 
   @media screen and (min-width: 768px) {
-    font-size: 2.8em;
+    font-size: 2em;
     /* margin-bottom: 60px; */
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 3rem;
+    font-size: 2.5rem;
     letter-spacing: 2px;
     text-align: center;
   }
@@ -50,7 +50,7 @@ const SubTitle = styled.h3`
   }
 
   @media screen and (min-width: 1024px) {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 `;
 
