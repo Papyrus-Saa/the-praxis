@@ -8,7 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 const Nav = styled.nav`
   width: 100%;
   border-bottom: 1px solid var(--text-color);
-  background-color: #df2222;
+
 
   @media screen and (min-width: 1400px) {
     width: 90%;
