@@ -6,7 +6,6 @@ const Container = styled.div`
   width: 100%;
   height: 100%;
   overflow: auto;
-  padding: 0.6em;
   text-align: center;
   padding: 1em;
 `;

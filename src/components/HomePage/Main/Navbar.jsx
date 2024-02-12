@@ -34,7 +34,7 @@ const ListItem = styled.li`
   align-items: center;
   padding: 0.6em;
   margin-bottom: 20px;
-  border: 1px solid var(--primary-color);
+  border: 2px solid var(--primary-color);
   border-radius: var(--border-radius);
   cursor: pointer;
   

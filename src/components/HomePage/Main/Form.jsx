@@ -90,6 +90,14 @@ const Button = styled.button`
     padding: 1em;
     font-size: 1rem;
   }
+  @media screen and (min-width: 1024px) {
+    cursor: pointer;
+    
+    &:active {
+      background-color: #0205aa;
+      color: hsl(0, 0%, 94.50980392156862%);
+    }
+  }
 `;
 
 const Form = () => {

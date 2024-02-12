@@ -10,7 +10,7 @@ const FooterContainer = styled.footer`
   width: 100%;
   padding: 1.3em 0.5em;
   background-color: var(--primary-colorTwo);
-  /* margin-top: auto; */
+  
 
   @media screen and (min-width: 768px) {
     padding: 0.8em;

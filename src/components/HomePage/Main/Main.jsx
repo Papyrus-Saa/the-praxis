@@ -36,7 +36,7 @@ const AcademicCredentials = styled.div`
   gap: 10px;
   margin: 10px;
   text-align: center;
-  padding: 1em 0.3em;
+  padding: 1em 0.3em 0;
   margin-bottom: 20px;
 
   @media screen and (min-width: 768px) {

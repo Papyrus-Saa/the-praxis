@@ -32,22 +32,34 @@ margin-bottom: 20px;
 `
 
 const List = styled.ul`
-width: 95%;
-margin: 0 auto;
-text-align: center;
-list-style: none;
-padding: 0;
-`
+  width: 95%;
+  margin: 0 auto;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+
+  @media screen and (min-width: 1024px) {
+    width: 70%;
+  }
+  @media screen and (min-width: 1400px) {
+    width: 40%;
+    color: var(--text-color);
+  }
+`;
 
 const SubTitle = styled.h3`
 margin-bottom: 10px;
 `
 
 const ListItem = styled.li`
-padding: 1em;
+  padding: 1em;
   margin-bottom: 20px;
   background-color: #ececec8d;
   box-shadow: -1px 0px 4px 0px rgba(204, 204, 204, 0.75);
+
+  @media screen and (min-width: 1024px) {
+    background-color: #6363638d;
+  }
 `;
 
 

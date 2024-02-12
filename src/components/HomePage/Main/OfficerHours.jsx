@@ -1,6 +1,7 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable no-undef */
 import styled from 'styled-components';
+import HomeComponent from '../../shared/HomeComponent';
 
 const hours = {
   Montag: '07:30 - 13:00',
@@ -16,7 +17,7 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
   width: 95%;
-  padding: 0 0.3em 0.3em;
+  padding: 2em 0.3em 0.3em;
   margin-right: auto;
   margin-left: auto;
   margin: 20px 10px;
@@ -101,6 +102,7 @@ const ListItem = styled.li`
 const OfficeHours = () => {
   return (
     <Container>
+      <HomeComponent/>
       <Title>Sprechzeiten</Title>
       {Object.entries(hours).map(([day, time]) => (
         <div key={day}>

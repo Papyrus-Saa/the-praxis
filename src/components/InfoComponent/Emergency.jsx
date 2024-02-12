@@ -15,6 +15,7 @@ const fadeInAnimation = keyframes`
 const Container = styled.div`
   width: 100%;
   height: 100vh;
+  overflow: auto;
   text-align: center;
   padding: 2em 0.6em 1em;
   animation: ${fadeInAnimation} 1.5s both;
